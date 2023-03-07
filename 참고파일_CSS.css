@@ -1,0 +1,133 @@
+/* style 태그에 작성하는 게 = 여기에 작성하는 거랑 동일 */
+
+div {
+        color: blue;
+}
+
+
+/* basic css 살펴보기  */
+
+
+.display {
+        /* block 요소는 div 태그의 기본값 
+            자기의 너비를 전부 갖고,
+            옆에 아무도 없어야 한다. 본인만 있음. 욕심쟁이 */
+        display: block;
+
+        /* inline 
+        인라인, span, a 태그 등등 이 기본값으로 인라인을 가짐 
+        옆으로, 태그가 자리할 수 있음. */
+        display: inline;
+
+        /* flex : 자식 태그들을 정렬 시킬 수 있음. 
+        정렬 방식은 여러가지가 있음. 
+        개발자 도구 참고해서 복붙 해오기  */
+        display: flex;
+
+        /*  inherit 
+            부모한테 값을 가져와서 적용시킨다. 
+            사용할 일이 거의 없음. 
+            */
+        display: inherit;
+
+        /* initial 
+            태그가 기본적으로 갖고 있는 걸 기본적으로 적용 */
+        display: initial;
+
+        /* none
+            화면에서 태그가 보이지 않게 지운다.
+            나중에 자바스크립트에서 이 디스플레이 논 태그가 있으면 
+                -> 선택되지 않음!⭐⭐⭐⭐⭐ 
+                -> 따라서 다른 방법을 취해야 함. */
+        display: none;
+
+}
+
+.wh {
+        /* 태그의 너비  */
+        width: 100px;
+
+        /* 태그의 높이 */
+        height: 100px;
+
+        /* 자식 태그의 너비 만큼 만 본인의 너비를 지정 ❓❓❓❓❓  */
+        width: max-content;
+
+        /* 자식 태그의 최소 만큼, 너비를 차지 한다. ❓❓❓❓❓  */
+        width: min-content;
+
+        /* 설정한 너비 이상으로 태그가 커지지 않는다. / 최대 여기까지 */
+        max-width: 100px;
+
+        /* 설정한 너비 이하로 태그가 줄어들지 않는다. / 최소 이정도는 보장 */
+        min-width: 10px;
+
+}
+
+.content {
+        /*  🔵 overflow hidden
+            자식 태그가 부모 영역 이상으로 보이지 않게 설정 
+            ✅ 부모태그에 설정 */
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+
+
+
+        /* 자식 태그의 내용을 스크롤 처리 할 것 인지 여부 */
+        overflow: scroll;
+
+        /*  스크롤 방향 지정
+            x 는 hidden & y 만 스크롤  */
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        /*  스크롤 방향 지정
+            y 는 hidden & x 만 스크롤  */
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        /* 투명도를 설정해줄 수 있음. */
+        /* 다 보임 / 깨끗하게 보임 */
+        /* opacity: 1; */
+        /* opacity: 0.5 */
+        opacity: 0.1
+}
+
+.text {
+        /* 글씨 크기 
+            pc 크롬 기준으로 기본값이 16px 로 설정됨
+            환경에 따라(모바일, 어떤 브라우저냐 등) 기본값이 다를 수 있음.  */
+        font-size: 16px;
+
+        /* 글씨의 굵기 */
+        /* 기본값은 500 이고, 글꼴을 가져왔을 땐 변할 수 있다. */
+        font-weight: 500;
+
+        /* 글씨색 
+            grb(), grba() 등으로 설정이 가능 */
+        color: rgba(23, 8, 243, 0.5);
+
+        /* 텍스트 정렬, 가운데로 설정 */
+        text-align: center;
+        /* 오른쪽 끝으로 정렬 */
+        text-align: end;
+        /* 왼쪽끝으로 정렬 */
+        text-align: start;
+
+
+        /* 텍스트에 줄 긋기 */
+        text-decoration: overline;
+        /* 텍스트에 밑줄 추가 */
+        text-decoration: underline;
+        /* 텍스트 꾸밈 요소 제거 
+            a 태그에 있던 줄도 제거함*/
+        text-decoration: none;
+
+        /* 글자간의 간격
+            똑똑 떨어지게 함 */
+        letter-spacing: 10px;
+
+
+
+}

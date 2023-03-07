@@ -1,0 +1,72 @@
+.position1{ 
+    /* relative 속성을 갖는 부모의 좌측 상단 상단을 기준으로 지정
+            이 absolute 를 자식에게 주면 - 부모의 좌측 상단에서 부터 지정 */
+    /* position: absolute; */
+
+
+    width: 500px;
+    height: 20000px;
+    border: 1px solid;
+
+
+    /* 이전 영역의 위치를 기준으로 이동
+            본인의 이전 위치
+            즉, 지금부터 "지금 자리를 기준으로 움직이게 할거야!"
+            position: relative;
+            ❓ 만약, 위치가 막 다른곳에 있었다면 - 그 위치를 기억? */
+    position: relative;
+
+    /*  얼만큼 움직이게 할건데? 어떤 방향으로? 
+            태그를 해당 위치에서 움직일 때 사용
+            position 속성을 주고 - top left ... -  어떤 수치로 이동하느냐
+            top 쓰면 bottom 을 쓰면 안돼
+            left right 은 둘 중 하나만 ✅✅  */
+    
+    /* 위에 100 만큼 떨어질거야 
+            이거 주석 했었던 단축키 어케 하지 ❓❓❓❓❓ */
+    top: 200px;
+    /* bottom: 100px; */
+    left: 200px;
+    /* right: 100px; */
+
+}
+
+
+.position2{ 
+
+    /* 부모의 좌측 상단! 을 기준으로! 움직이게 됨 */
+    /* position: absolute; */
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+
+
+    /* 보고 있는 브라우저의 위치로 고정! 시킨다.
+        스크롤해도, 따라서, 움직임. 
+        ⭐⭐ nav bar 같은 곳에 사용 ex) floating button, 티스토리 구독 따라오게  */
+    position: fixed;
+
+
+    /* 지정한 위치 밖으로 나가지 못 하게 함 
+            fixed 랑 뭐가 다르지❓❓❓❓❓ */
+    position: sticky;
+
+
+    /* 부모(relative 가진 부모) 의 하단, 으로부터, 자식(absolute 를 가진) 100px 을 이동
+            만약, ⭐부모가 없으면 -> 할아버지에게 -> 할아버지도 없으면 body 기준으로 움직임 */
+    /* bottom: 100px; */
+    /* right: 100px; */
+    top: 100px;
+    left: 0;
+
+
+    
+
+}
+
+
+
+.position3{ 
+    
+}

@@ -1,0 +1,61 @@
+.background {
+    width: 200px;
+    height: 200px;
+
+
+    /* 배경색 넣기 */
+    background-color: beige;
+
+
+    /* 배경 이미지 넣기 
+            url 에 해당 파일 이미지 주소 넣으면 됨.
+            ❓ 잘 안 나오는데? */
+    background-image: url("https://blog.kakaocdn.net/dn/bezjux/btqCX8fuOPX/6uq138en4osoKRq9rtbEG0/img.jpg");
+
+
+    /* 배경 이미지 크기 지정
+            ⭐ 이미지가 다 보일 수 있게(비율맞춤). 이미지가 너무 커지는 경우, */
+    background-size: contain;
+
+
+    /* 배경 이미지의 크기 지정
+            최대 크기 비율을 맞춘다. -> 따라서 이미지가 짤릴 수 있음. 
+            이미지와 비율을 맞춰줘야 함 📛📛📛📛📛 (잘 모르겠음) */
+    background-size: cover;
+
+
+    /* 이미지 사이즈 직접 지정
+            하위 인자 : 너비, 높이  */
+    background-size: 100px 100px;
+
+
+    /* 배경 이미지의 위치 지정
+            배경 이미지를 얼만큼 움직이게 할 것 인가. 
+            하우 인자 : x 축, y축 */
+    background-position: 10px 10px;
+
+
+    /* 배경 이미지 정렬
+            위치를 가운데로 맞춤 */
+    background-position: center;
+
+
+    /* 🟦 이미지 반복 없애기
+            현재, 한정된 div 가 있고, 여기에 사진이 들어가는데, 이때, 남은 공간은 사진이 반복
+            배경 이미지 반복하지 않는다.  */
+    background-repeat: no-repeat;
+
+    /* 배경 이미지 반복 여부 
+            반복 yes = 기본값 */
+    background-repeat: repeat;
+
+    /* 배경이미지를 x 축으로만 반복 */
+    /* background-repeat: repeat-x; */
+
+    /* 배경이미지를 y축 으로만 반복 */
+    /* background-repeat: repeat-y; */
+
+
+
+
+}
